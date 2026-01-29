@@ -1,61 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            font-size: 50px;
-            color: #333;
-        }
-        p {
-            font-size: 20px;
-            color: #555;
-        }
-        .cta {
-            margin-top: 20px;
-            font-size: 18px;
-            color: #007bff;
-            text-decoration: none;
-        }
-        .cta:hover {
-            text-decoration: underline;
-        }
-        .contact {
-            margin-top: 30px;
-            font-size: 18px;
-            color: #333;
-        }
-        .contact a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ujjawal Raj | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-    <div class="container">
-        <h1>Coming Soon!</h1>
-        <p>Our website is under maintenance. Stay tuned!!</p>
-        <div class="contact">
-            <p>Contact us at: <a href="mailto:ujjwalr781@.com">ujjwalr781@gmail.com</a></p>
-        </div>
+
+  <!-- Navbar -->
+  <nav>
+    <h2 class="logo">UR</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="themeToggle">🌙</button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+   <h1>Hi, I'm <span>Ujjawal Raj</span></h1>
+<p>Frontend Developer | MERN Stack | UI/UX Focused</p>
+
+    <div class="hero-btns">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="resume.pdf" download class="btn outline">Download Resume</a>
     </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a Computer Science undergraduate and frontend-focused MERN stack developer with a strong
+    foundation in data structures, algorithms, and modern web technologies.
+    I enjoy building clean, responsive, and scalable applications that deliver real value.
+    I have hands-on experience working on full-stack projects, authentication systems, and
+    modern UI/UX design practices.
+  </p>
+
+  <div class="skills">
+    <span>C++</span>
+    <span>JavaScript</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>React</span>
+    <span>Tailwind CSS</span>
+    <span>Node.js</span>
+    <span>Express.js</span>
+    <span>MongoDB</span>
+    <span>Git & GitHub</span>
+  </div>
+</section>
+
+
+  <!-- Projects -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="card">
+      <h3>Inventory Management System</h3>
+      <p>
+        MERN stack web application for managing inventory, users, and admin operations.
+        Features secure authentication, role-based access, and a modern responsive UI.
+      </p>
+      <div class="links">
+        <a href="https://github.com/Ujjawal127/Inventory-management-system-" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>LIKHO – Chrome Notes Extension</h3>
+      <p>
+        Productivity-focused Chrome extension built with React and Manifest v3.
+        Allows users to save notes persistently and export them as .txt files.
+      </p>
+      <div class="links">
+        <a href="https://github.com/Ujjawal127/Likho" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>JobManthan – Job Portal</h3>
+      <p>
+        Full-stack MERN job portal enabling job listings, applications, and user profiles.
+        Implemented JWT authentication, bcrypt security, and MongoDB data relationships.
+      </p>
+      <div class="links">
+        <a href="https://github.com/Ujjawal127/JobManthan-" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- experience -->
+ <section class="section">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Infosys Springboard Intern</h3>
+    <p><i>Oct 2024 – Dec 2024</i></p>
+    <p>
+      Worked on a MERN-based application “Inventory Pro” focused on stock tracking and admin workflows.
+      Improved UI/UX using React and modern CSS frameworks while collaborating on real-world modules.
+    </p>
+  </div>
+</section>
+ <!-- education -->
+
+ <section class="section">
+  <h2>Education</h2>
+
+  <div class="card">
+    <h3>B.Tech – Computer Science & Engineering</h3>
+    <p>Darbhanga College of Engineering (2021 – 2025)</p>
+    <p>GPA: 8.29 / 10</p>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+<section id="contact" class="section contact">
+  <h2>Contact Me</h2>
+
+  <p>Email: <b>ujjwalr781@gmail.com</b></p>
+  <p>Phone: <b>+91 73522 30136</b></p>
+
+  <div class="socials">
+    <a href="https://github.com/Ujjawal127" target="_blank">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/ur781/" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+  </div>
+</section>
+
+
+  <footer>
+    <p>© 2026 Ujjawal Raj</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
